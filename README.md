@@ -9,8 +9,9 @@ Day3-4/
 │
 ├── folder2/              # branch2
 │   ├── max.py            # Maximum function
-│   ├── avr.py            # Average function
-│   └── main.py           # Main program
+│   └── avr.py            # Average function
+│
+├── main.py               # Main program
 │
 └── README.md             # Project documentation
 ```
