@@ -1,4 +1,4 @@
-from sum import summation
+from folder1.sum import summation
 from sub import subtraction
 from average import average
 from max import maximum
