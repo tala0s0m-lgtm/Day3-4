@@ -1,3 +1,3 @@
 # Simple addition program
-def calculate_Subtraction(X, Y):
+def calculate_addition(X, Y):
   return X + Y
