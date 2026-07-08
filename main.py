@@ -1,9 +1,9 @@
 from folder1.sum import summation
-from sub import subtraction
-from average import average
-from max import maximum
+from folder1.sub import calculate_Subtraction
+from folder2.avr import average
+from folder2.max import maximum
 
-choice = int(input("Choose operation:\n1 - Add\n2 - Sub\n3 - max\n4 - Avg"))
+choice = int(input("Choose operation:\n1 - Add\n2 - Sub\n3 - max\n4 - Avg\n> "))
 
 match choice:
     case 1:
@@ -15,7 +15,8 @@ match choice:
     case 2:
         num1 = int(input("Enter first number: "))
         num2 = int(input("Enter second number: "))
-        result = subtraction(num1, num2)
+        
+        result = calculate_Subtraction(num1, num2) 
         print(f"The difference is: {result}")
 
     case 3:
@@ -26,7 +27,11 @@ match choice:
 
     case 4:
         list_of_numbers = input("Enter numbers separated by spaces: ")
-        result = average(list_of_numbers)
+        
+        
+        cleaned_list = [int(num) for num in list_of_numbers.split()]
+        
+        result = average(cleaned_list)
         print(f"The average is: {result}")
 
     case _:
